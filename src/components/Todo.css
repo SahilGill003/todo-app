@@ -166,6 +166,7 @@ header>p {
   position: relative;
   background-color: var(--clr-divider);
   transition: inherit;
+  flex-shrink: 0;
 }
 
 .item-checkbox:hover {
