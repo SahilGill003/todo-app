@@ -5,7 +5,15 @@ import TodoItem from './TodoItem';
 import { useEffect, useState } from 'react';
 
 const TodoList = () => {
-	const [todoList, setTodoList] = useState<Array<any>>([]);
+	const data = [
+		{ id: "1", status: "complete", text: "Complete online Javascript course" },
+		{ id: "2", status: "active", text: "Jog around the park 3x" },
+		{ id: "3", status: "active", text: "10 minutes meditation" },
+		{ id: "4", status: "active", text: "Read for 1 hour" },
+		{ id: "5", status: "active", text: "Pick up groceries" },
+		{ id: "6", status: "complete", text: "Complete the Todo App on Frontend Mentor" },
+	]
+	const [todoList, setTodoList] = useState<Array<any>>(data);
 
 	const [itemText, setItemText] = useState("");
 	const [itemStatus, setItemStatus] = useState<"active" | "complete">("active");
