@@ -10,7 +10,7 @@ export default ({ id, text, status, removeItem, changeStatus }: { id: Number, te
     <button className="icon-cross-btn" aria-label="delete item" onClick={() => {
       const tr: HTMLElement = ref.current!;
       tr.classList.remove('visible');
-      setTimeout(() => removeItem(id), 375)
+      setTimeout(() => removeItem(id), 150)
     }}>
       <IconCross className='icon-cross'></IconCross>
     </button>
